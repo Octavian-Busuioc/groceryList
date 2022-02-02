@@ -1,0 +1,292 @@
+/*using csss custom properties variables */
+:root {
+   --bg-color-form: rgb(122, 119, 119);
+   --hidden-pass-color: #7a797e;
+   --column-bg-color:rgb(190, 199, 60);
+   --column-border-color: #d3e3d3;
+   --column-box-shadow-color: #d3e3d3;
+   --registration-form-border-color: rgb(44, 41, 41);
+   --text-heading-color: #fff;
+   --text-label-color: #fff;
+   --gap: 15px;
+}
+
+
+/* login/register font */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/*registration page */
+
+body {
+  background-size: cover;
+  background-position: center;
+}
+
+.col-md-6 {
+  border-width: 10px;
+  background: #1d1f20;
+  position: relative;
+  border-radius: 10px;
+}
+
+.text-heading-color {
+  color: var(--text-heading-color);
+  text-align: center;
+}
+
+.text-label-color {
+  color: var(--text-label-color);
+}
+
+.login-box {
+  max-width: 700px;
+  float: none;
+  margin: 150px auto;
+  padding: 30px;
+}
+
+.container_login {
+  position: absolute;
+  width: 550px;
+  top: 50%;
+  left: 58%;
+  transform: translate(-50%,-50%);
+}
+
+.main {
+  background-color: var(--bg-color-form);
+  width: 220px;
+  height: 320px;
+  margin-top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; 
+  border-radius: 5px 5px 5px 5px;
+} 
+
+
+input {
+  margin-top: 10px;
+}
+
+
+#second {
+    display: none;
+}
+
+
+/*show/hide password */
+
+.show-hide-eye {
+  position:absolute;
+  right: 0px;
+  margin-top: -32px;
+  margin-right: 18px;
+  z-index: 9999;
+  width: xyz;
+  height: xyz;
+  
+}
+.fa {
+  font-size: 20px;
+  color: var(--hidden-pass-color);
+}
+.fa-eye{
+      position: absolute; 
+      right: 2px;
+      top: 4px;
+  }
+
+
+
+/* update page */
+
+.back-button {
+width: 80px;
+height: 80px;
+float: left;
+margin-top: 20px;
+margin-left: 50px;
+margin-bottom: 20px;
+}
+
+.column {
+  background-color: var(--column-bg-color);
+  padding: 10px;
+  border: 1px solid var(--column-border-color);
+  border-radius: 5px;
+  box-shadow: 2px 2px 1px var(--column-box-shadow-color);
+  z-index: -1;
+}
+
+
+/* homepage */
+
+.form-homepg input {
+   background-color: #fff;
+   isolation: isolate;
+}
+
+.form-homepg label {
+  color: black;
+  isolation: isolate;
+}
+.navbar {
+    width: 100%;
+    min-width: 1050px;
+    height: 50px;
+    margin: 0 0 10px 0;
+    border-bottom: 0.25em solid rgb(190, 199, 60);
+    border-radius: 5px;
+    display: inline-flex;
+    position: fixed;
+    z-index: 10;
+}
+
+.nav-list{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap);
+  list-style: none;
+}
+
+
+/* user profile */
+
+.user-form input {
+  background-color: #fff;
+  border-radius: 10px;
+  isolation: isolate;
+}
+
+.user-form label {
+  text-decoration:black;
+  isolation: isolate;
+}
+
+/* update pg */
+
+.form-update input {
+  background-color: #fff;
+  border-radius: 10px;
+  isolation: isolate;
+}
+
+.form-update label {
+  text-decoration:black;
+  isolation: isolate;
+}
+
+/* shopping cart */
+
+
+.input-value {
+  width: 100%;
+}
+
+
+#scroll-btn  {
+  position: relative;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 30px;
+  opacity: 9;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+
+/* currency convertor */
+
+.cc {
+  width:400px;
+	margin: 0 auto; 
+}
+
+.section {
+  background-color: grey;
+  border-top: 0.25em solid rgb(190, 199, 60);
+  border-radius: 5px;
+  isolation: isolate;
+}
+
+.cc input {
+  background-color: #fff;
+  isolation: isolate;
+}
+
+/* notes page */
+.notes-form input{
+  background-color: #fff;
+  isolation: isolate;
+}
+
+.notes-form {
+  width: 40%;
+  margin: 30px auto;
+  padding: 10px;
+  background-color: grey;
+  border: 1px solid black;
+  margin-top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; 
+}
+
+.notes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.note {
+      color: black;
+      width: 40%;
+      display: inline-block;
+      margin: 10px;
+      background-color: #ffda00;
+      position: relative;
+      min-height: 100px;
+      padding: 10px;
+}
+
+.note .title a {
+  color: black;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.note .close {
+  top:10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+}
+
+.new-note {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 7px;
+}
+
+.nr-row {
+  visibility: hidden; 
+}
+
+.error-handler {
+  color: red;
+  margin: 0px;
+}
+
+.note small {
+  display:block;
+  font-style: italic;
+  text-align: right;
+}
